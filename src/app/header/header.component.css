@@ -1,0 +1,4 @@
+div.navbar-nav {
+    --bs-nav-link-color:#b3b3b3;
+    --bs-nav-link-hover-color: yellow;
+  }

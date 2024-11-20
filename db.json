@@ -1,0 +1,112 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "servicename": "kickboxing",
+      "imageurl": "assets/img/services/3.jpg",
+      "description": "Kickboxing is a full-contact combat sport and a form of boxing based on punching and kicking. The fight takes place in a boxing ring."
+    },
+    {
+      "id": 2,
+      "servicename": "bodybuilding",
+      "imageurl": "assets/img/services/2.jpg",
+      "description": "Build your body with the world's strongest with the largest selection of supplements, articles, workout programs"
+    },
+    {
+      "id": 3,
+      "servicename": "aerobic",
+      "imageurl": "assets/img/services/1.jpg",
+      "description": "Aerobic exercise is a physical activity that increases your heart rate and how much oxygen your body uses to produce energy"
+    }
+  ],
+  "token": [
+    {
+      "id": 1,
+      "auth": true
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": 1,
+      "nom": "Nacir",
+      "role": "BodyBuilding Coach",
+      "Email": "nacir16mahfoudhi@gmail.com",
+      "image": "/assets/img/team/nacir.JPG"
+    },
+    {
+      "id": 2,
+      "nom": "Rahmani",
+      "role": "kickboxing coach",
+      "Email": "rahmeni@gmail.com",
+      "image": "/assets/img/team/rahmeni.jpeg"
+    },
+    {
+      "id": 3,
+      "nom": "Mariem",
+      "role": "Cardio Coach",
+      "Email": "mariem@gmail.com",
+      "image": "/assets/img/team/mariem.jpg"
+    },
+    {
+      "id": 4,
+      "nom": "Bouali",
+      "role": "Judo Coach",
+      "Email": "bouali@gmail.com",
+      "image": "/assets/img/team/bouali.jpg"
+    },
+    {
+      "id": 5,
+      "nom": "Naciros",
+      "role": "BodyBuilding Coach",
+      "Email": "nacir16mahfoudhi@gmail.com",
+      "image": "/assets/img/team/nacir.JPG"
+    }
+  ],
+  "subscribers": [
+    {
+      "name": "nacir mahfoudhi",
+      "email": "nacir16mahfoudhi@gmail.com",
+      "phone": "9456812",
+      "gender": "Male",
+      "date": "2003-12-05",
+      "terms": true,
+      "id": 3
+    },
+    {
+      "name": "nacir",
+      "email": "nacir@gmail.com",
+      "phone": "945",
+      "gender": "Male",
+      "date": "2023-12-29",
+      "terms": true,
+      "id": 4
+    },
+    {
+      "name": "rahmeni",
+      "email": "rahmeni@gm",
+      "phone": "5454",
+      "gender": "Male",
+      "date": "2024-01-01",
+      "terms": true,
+      "id": 5
+    },
+    {
+      "name": "rahmeni",
+      "email": "rahmeni@gm",
+      "phone": "5454",
+      "gender": "Male",
+      "date": "2024-01-01",
+      "terms": true,
+      "id": 6
+    },
+    {
+      "name": "nea",
+      "email": "zeaze@gmail.com",
+      "phone": "95545",
+      "gender": "Male",
+      "date": "2023-12-05",
+      "terms": true,
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.text-primary{
+	color:#e68b0de8!important
+}
+.wt-section{
+	background: url('/assets/img/intro/img5.jpg') center/cover no-repeat; /* Adjust the path and other background properties */
+}
+h2{
+	color:#FFD700;
+}
+.col-md-8 .lead{
+	color: white;
+}

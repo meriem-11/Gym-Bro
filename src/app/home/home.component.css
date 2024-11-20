@@ -1,0 +1,29 @@
+
+.fitness-section {
+  position: relative;
+  height: 100vh; /* Adjust the height as needed */
+  background: url('/assets/img/intro/img5.jpg') center/cover no-repeat; /* Adjust the path and other background properties */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFD700;
+}
+
+.fitness-content {
+  max-width: 600px;
+  margin-right: 700px; 
+  margin-bottom: 100px;/* Adjust the margin to move the content to the right */
+}
+
+.btn-our-prices {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FFD700; /* Adjust the button color */
+  color: #000; /* Adjust the button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}

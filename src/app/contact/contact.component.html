@@ -1,0 +1,57 @@
+<section  class="wt-section bg-light" id="contact">
+	<div  class="container">
+	<div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
+          <div class="col-md-8 text-center w-md-50 mx-auto mb-0 ">
+            <h2 class="mb-md-2">Let us know</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+          </div>
+		</div>
+        <div class="row justify-content-md-center text-center mg-5 pb-5">
+            <div class="col-md-8">
+                     <div class="form"> 
+		  
+		   <!-- Form itself -->
+		   <form [formGroup]="form" (ngSubmit)="send()" name="sentMessage" class="well" id="contactForm" novalidate data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+			<div class="control-group">
+			  <div class="form-group mb-4">
+				<input formControlName="from_name" type="text" class="form-control form-control-lg" placeholder="Full Name" id="from_name" required />
+				<div class="form-text text-danger" *ngIf="form.get('from_name')?.hasError('required')">
+					*Full Name is required.
+					
+				  </div>
+				  <div class="form-text text-danger" *ngIf="form.get('from_name')?.hasError('minlength')">
+				  </div>
+				  <div class="form-text text-danger" *ngIf="form.get('from_name')?.hasError('pattern')">
+					  *Full Name should start with an alphabet.
+				  </div>
+				<p class="help-block"></p>
+			  </div>
+			</div>
+			<div class="form-group mb-4">
+			  <input formControlName="email" type="email" class="form-control form-control-lg" placeholder="Email" id="email" required />
+			  <div class="form-text text-danger" *ngIf="form.get('email')?.hasError('required')">
+				*Email is required.
+			  </div>
+			  <div class="form-text text-danger" *ngIf="form.get('email')?.hasError('email')">
+				*Please enter a valid email address.
+			  </div>
+			</div>
+			<div class="form-group mb-4">
+			  <textarea formControlName="message" rows="10" cols="100" class="form-control form-control-lg" placeholder="Message" id="message" required minlength="5" maxlength="999" style="resize:none"></textarea>
+			</div>
+			<div id="success"></div> <!-- For success/fail messages -->
+			<div class="text-center">
+			  <button class="btn btn-lg btn-primary py-3 mt-3 px-4 btn-pill" type="submit">Send Your Message</button>
+			</div>
+		  </form>
+		  
+        </div>
+ 
+            </div>
+        </div>
+		 <div class="row">
+  <iframe src="https://maps.google.com/maps?q=isetmahdia&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+ </div>
+		
+    </div>
+</section>

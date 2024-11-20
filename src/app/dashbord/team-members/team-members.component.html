@@ -1,0 +1,53 @@
+<form [formGroup]="myForm" class="user-form">
+  <div>
+    <h1>Add New Members</h1>
+
+    <div>
+      <label for="nom">Member full name:</label>
+      <input type="text" formControlName="nom" />
+      <div *ngIf="nomControl?.hasError('required') && nomControl?.touched" class="error-msg">Name is required.</div>
+    </div>
+
+    <div>
+      <label for="role">Role:</label>
+      <input type="text" formControlName="role" />
+      <div *ngIf="roleControl?.hasError('required') && roleControl?.touched" class="error-msg">Role is required.</div>
+    </div>
+
+    <div>
+      <label for="Email">Email:</label>
+      <input type="email" formControlName="Email" />
+      <div *ngIf="EmailControl?.hasError('required') && EmailControl?.touched" class="error-msg">Email is required.</div>
+      <div *ngIf="EmailControl?.hasError('email') && EmailControl?.touched" class="error-msg">Email is invalid.</div>
+    </div>
+
+    <div>
+      <label for="image">Image Link:</label>
+      <input type="text" formControlName="image" />
+      <div *ngIf="imageControl?.hasError('required') && imageControl?.touched" class="error-msg">Image is required.</div>
+    </div>
+
+
+  <button type="submit" [disabled]="myForm.invalid" (click)="ajouter()" class="btn btn-success">Add Coach</button><br><br>
+</div>
+</form>
+    <h5>Team-Members List :</h5>
+    <table border="1" class="user-list">
+      <tr>
+        <th>ID</th>
+        <th>Full name</th>
+        <th>Role</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor="let info of teamMembers; let i = index">
+        <td>{{ info.id }}</td>
+        <td>{{ info.nom }}</td>
+        <td>{{ info.role }}</td>
+        <td>{{ info.Email }}</td>
+        <td>
+          <button (click)="edit(i)" class="btn btn-secondary">Edit</button>
+          <button (click)="delete(i)" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+    </table>

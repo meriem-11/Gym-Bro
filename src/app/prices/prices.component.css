@@ -1,0 +1,38 @@
+.wt-pricing {
+  background-color: #fff;
+}
+
+.wt-pricing__header {
+  position: relative;
+  padding: 2.5rem 1.5rem;
+}
+
+.wt-pricing__header-price {
+  display: block;
+  line-height: .84;
+}
+
+.wt-pricing__header-title {
+  opacity: .8;
+}
+
+.wt-pricing__header-decoration {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.wt-pricing__content {
+  padding: 1.5rem;
+}
+
+.wt-pricing__content .disabled .wt-icon {
+  color: #85778f;
+  background-color: rgba(133, 119, 143, 0.1);
+}
+
+.wt-pricing .disabled {
+  color: #85778f;
+}
+

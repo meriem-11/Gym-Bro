@@ -1,0 +1,29 @@
+<div *ngIf="sharedDataService.allsubsribers">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Gender</th>
+          <th>Date Of Birth</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let subscriber of sharedDataService.allsubsribers , let i = index">
+          <td>{{ subscriber.id }}</td>
+          <td>{{ subscriber.name }}</td>
+          <td>{{ subscriber.email }}</td>
+          <td>{{ subscriber.phone }}</td>
+          <td>{{ subscriber.gender }}</td>
+          <td>{{ subscriber.date }}</td>
+          <td>
+
+            <button (click)="delete(i)" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
