@@ -24,7 +24,6 @@ import { EmailJSResponseStatus } from 'emailjs-com';
 import { JoinComponent } from './join/join.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ChatComponent } from './chat/chat.component';
-import { ComponentNameComponent } from './component-name/component-name.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +44,6 @@ import { ComponentNameComponent } from './component-name/component-name.componen
     JoinComponent,
     ScheduleComponent,
     ChatComponent,
-    ComponentNameComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,42 @@
+<div class="user-form">
+    <h1>Services Form</h1>
+    <form (ngSubmit)="add()">
+      <div>
+        <label for="nom">Service name:</label>
+        <input type="text" id="nom" name="nom" [(ngModel)]="service.servicename" />
+      </div>
+      <div>
+        <label for="prenom">image Url:</label>
+        <input type="text" id="prenom" name="prenom" [(ngModel)]="service.imageurl" />
+      </div>
+      <div>
+        <label for="prenom">description:</label>
+        <input  class="desc" type="text" id="prenom" name="prenom" [(ngModel)]="service.description" />
+      </div>
+      <div>
+        <button class="btn btn-success" type="submit">Add Service</button>
+      </div>
+    </form>
+  </div>
+  
+  <div class="user-list">
+    <h2>Services List</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Service</th>
+        <th>Description</th>
+        <th>Actions</th>
+        
+      </tr>
+      <tr *ngFor="let s of _shared.allservices ; let i = index">
+        <td>{{ s.id }}</td>
+        <td>{{ s.servicename }}</td>
+        <td>{{ s.description}}</td>
+        <td>
+          <button class="btn btn-secondary" (click)="edit(i)">Edit</button>
+          <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
